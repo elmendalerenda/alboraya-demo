@@ -15,6 +15,10 @@
     "APP_HOST": {
       "description": "used within the application to generate absolute urls where needed",
       "value": "http://changemetothecurrenthost.now"
+    },
+    "ORG_DOMAIN": {
+      "description": "user with this email will be identified as part of the organization",
+      "value": "gmail.com"
     }
   }
 }

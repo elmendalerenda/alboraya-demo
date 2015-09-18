@@ -54,7 +54,8 @@ $ bundle exec rails s
 
 ### Tareas post-despliegue:
   1. Cambiar el valor de la variable de entorno APP_HOST por la url de la nueva aplicación creada.
-  2. Programar diariamente los trabajos definidos en [lib/tasks/scheduler.rake](https://github.com/desarrollolocal/Suggestion_Box/blob/master/lib/tasks/scheduler.rake) en el add-on Scheduler.
+  2. Cambiar el valor de la variable de entorno ORG_DOMAIN por el host con el que quiere ser identificado el personal del ayuntamiento.
+  3. Programar diariamente los trabajos definidos en [lib/tasks/scheduler.rake](https://github.com/desarrollolocal/Suggestion_Box/blob/master/lib/tasks/scheduler.rake) en el add-on Scheduler.
 
 
 ### CLI

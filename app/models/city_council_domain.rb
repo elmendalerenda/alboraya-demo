@@ -1,6 +1,6 @@
-class CityCouncilDomain < ActiveRecord::Base
+class CityCouncilDomain
 
   def self.is_city_council_staff?(email)
-     where(domain: email.split('@').last).any?
+    email.split('@').last == ENV['ORG_DOMAIN']
   end
 end

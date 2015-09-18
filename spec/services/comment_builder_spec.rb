@@ -155,7 +155,8 @@ RSpec.describe CommentBuilder do
     let(:any_params_of_council) { {author: 'The Thing', email:  'BenjaminGrimm@city_council.gov', text:  'In maximus dolor et urna convallis, a porta tellus ullamcorper.', vote: Comment::ABSTENTION}}
 
     before do
-      CityCouncilDomain.create(domain: 'city_council.gov')
+      allow(ENV).to receive(:[]).and_return('city_council.gov')
+      #CityCouncilDomain.create(domain: 'city_council.gov')
     end
 
     context "comment a suggestion when is open" do

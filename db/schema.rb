@@ -11,13 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150523182246) do
-
-  create_table "city_council_domains", force: :cascade do |t|
-    t.string   "domain"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20150918184235) do
 
   create_table "city_council_responsible_people", force: :cascade do |t|
     t.string   "name"
