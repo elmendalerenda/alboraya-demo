@@ -18,13 +18,12 @@ body {
 
 .jumbotron {
   text-align: center;
-  background-color: #d56444;
+  background-color: #FFF;
   color: #292929;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-image: url("header-background.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
   h1 {
     font-size: 65px;
     font-weight: bold;
